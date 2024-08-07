@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Bestellapp_copy/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Bestellapp_copy/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Bestellapp_copy/assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/basket.css">
+    <link rel="stylesheet" href="./style/menu.css">
+    <link rel="stylesheet" href="./style/mediaquery.css">
+    <title>Bestellapp</title>
+</head>
+
+<body onload="loadInit()" onclick="navClose()">
+    <header class="header"><a href="index.html"><img class="headerLogo" src="./assets/img/Logo.png"
+                alt="Bestellapp logo"></a> <img id="img" onclick="navOn()" class="headerBurger"
+            src="./assets/img/icons8-hamburger-50.png" alt="Bild von Burger logo">
+    </header>
+    <div id="navContent" class="nav d_none"><img src="./assets/img/icons8-arrow-right-64.png" alt="Bild vom Pfeil">
+        <a href="./html/datenschutz.html">Datenschutz</a>
+        <a href="./html/impressum.html">Impressum</a>
+    </div>
+    <div id="overlayPay" class="d_none">
+        <div class="overlay"><img onclick="payDoneOff()" class="closeIcon" src="./assets/img/icons8-close-80.png"
+                alt="close">
+            <p>Vielen Dank für ihre Bestellung.</p>
+        </div>
+    </div>
+    <div class="mainContent">
+
+        <div id="mainContentOn" class="headContent">
+
+            <div class="headerPic"></div>
+            <div class="headline">
+                <h1>Place of Foot</h1>
+                <p>Bewertung (4,4 von 5 Sternen)</p>
+            </div>
+            <div class="headlineMenu">
+                <img src="./assets/img/icons8-arrow-right-64.png" alt="">
+                <a href="index.html#h20">Hauptgerichte</a>
+                <a href="index.html#h21">Beilagen</a>
+                <a href="index.html#h22">Soßen</a>
+                <a href="index.html#h23">Getränke</a>
+            </div>
+            <div class="container">
+                <div id="content"></div>
+            </div>
+        </div>
+        <div id="basketStyleOff" class="basketStyle">
+
+            <div class="basketContent">
+                <h1>Warenkorb</h1>
+                <div id="deliveryCost" class="basketBTNOrderCost"></div>
+                <div id="basket" class="basketLoad"></div>
+                <div class="priceArea">
+                    <div id="basketDelivery"></div>
+                    <div id="basketPay"></div>
+                    <div id="basketPaySum"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="basketoff" class="basketBtnMain">
+        <button id="basketButton" onclick="basketon()" class="basketBTN">Warenkorb</button>
+    </div>
+    <footer id="footer" class="foot"><a href="./html/datenschutz.html">Datenschutz</a><a
+            href="./html/impressum.html">Impressum</a> <a class="arrowUp" href="index.html#img"><img
+                src="./assets/img/icons8-arrow-up.png" alt="Pfeil nach oben"></a>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="../Bestellapp_copy/scripts/order.js"></script>
+    <script src="../Bestellapp_copy/scripts/templates.js"></script>
+    <script src="../Bestellapp_copy/scripts/basket.js"></script>
+    <script src="../Bestellapp_copy/scripts/basketResponsiv.js"></script>
+
+</body>
+
+</html>

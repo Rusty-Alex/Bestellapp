@@ -1,0 +1,13 @@
+
+html{
+    width: 100%;   
+}
+.impressumArea{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-top: 50px;
+}
+

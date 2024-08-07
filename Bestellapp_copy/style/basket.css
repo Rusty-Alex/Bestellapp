@@ -1,0 +1,287 @@
+.basketStyle {
+    width: 300px;
+    flex-grow: 1;
+    box-shadow: -2px 0px 6px 1px rgb(240, 237, 237);
+}
+
+.basketStyle h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(240, 237, 237);
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.basketContent {
+    width: 100%;
+    height: 20%;
+    position: sticky;
+    top: 0;
+}
+
+.basketBtnMain {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.basketBTN {
+    position: fixed;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    border: 1px solid rgb(240, 237, 237);
+    color: rgb(255, 128, 0);
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    outline: 1px solid rgb(240, 237, 237);
+}
+.basketBtnB{
+    position: absolute;
+    bottom: 200px;
+}
+
+.basketBTN:hover {
+    color: white;    
+}
+
+.basketOrder {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 1px solid rgb(240, 237, 237);
+}
+
+.basketCalc img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.basketCalc img:hover {
+    filter: contrast(0) brightness(0);
+}
+
+.basketCalc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basketAddMin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.basketAddMin img {
+    width: 20px;
+    height: 20px;
+}
+
+.basketAddMin span:nth-of-type(1) {
+    color: rgb(255, 128, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.basketAddMin span:nth-of-type(1):hover {
+    border-radius: 100%;
+    border-color: rgb(255, 128, 0);
+    border: 1px solid;
+}
+
+.basketAddMin span:nth-of-type(3) {
+    color: rgb(255, 128, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.basketAddMin span:nth-of-type(3):hover {
+    border-radius: 100%;
+    border-color: rgb(255, 128, 0);
+    border: 1px solid;
+}
+
+.basketLoad {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+.basketLoad::-webkit-scrollbar {
+    width: 12px;
+}
+
+.basketLoad::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 30px;
+}
+
+.basketLoad::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+.emptyBasket {
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: grey;
+}
+
+.basketBTNOrderCost {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderMenü {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 90%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(240, 237, 237);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.deliveryInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid rgb(240, 237, 237);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.deliveryInputSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 128, 0);
+    border-right: 1px solid rgb(240, 237, 237);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    color: white;
+}
+
+.collectionInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.collectionInputSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 128, 0);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.orderMenü input:nth-of-type(1) {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.btnPay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 50px;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(255, 128, 0);
+    color: white;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    border: 1px solid rgb(240, 237, 237);
+}
+
+.btnPay:hover {
+    color: black;
+}
+.basketSpan{
+    display: flex;
+   justify-content: space-between;
+   padding-right: 50px;
+    padding-left: 10px;
+    
+}
+.bnPayBasket{
+    display: flex;
+    justify-content: center;
+}
+.closeIcon{
+    position: relative;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.priceArea{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
